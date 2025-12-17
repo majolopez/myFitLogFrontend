@@ -3,6 +3,7 @@ import js from "@eslint/js";
 const API_URL = import.meta.env.VITE_API_URL;
 
 export async function createUserProfile(data) {
+    console.log("Creating user profile with url:", `${API_URL}/user`);
   const response = await fetch(
     `${API_URL}/user`,
     {

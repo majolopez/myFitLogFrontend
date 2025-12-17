@@ -47,7 +47,7 @@ export default function CalorieProfilePage() {
         <div className={styles.grid}>
           <Metric label="Daily Calories: " value={`${data.daily_calories} kcal`} />
           <Metric label="Protein: " value={`${data.protein} g`} />
-          <Metric label="Carbs: " value={`${data.carbs} g`} />
+          <Metric label="Carbs: " value={`${data.carb} g`} />
           <Metric label="Fat: " value={`${data.fat} g`} />
         </div>
       </div>
