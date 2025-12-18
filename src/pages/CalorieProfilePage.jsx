@@ -2,12 +2,13 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getCalorieProfile } from "../services/userService";
 import styles from "./CalorieProfilePage.module.css";
-
+import { useNavigate } from "react-router-dom";
 
 
 
 export default function CalorieProfilePage() {
   const { userId } = useParams();
+  const navigate = useNavigate();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -50,6 +51,15 @@ export default function CalorieProfilePage() {
           <Metric label="Carbs: " value={`${data.carb} g`} />
           <Metric label="Fat: " value={`${data.fat} g`} />
         </div>
+      </div>
+
+      <div className={styles.carb}>
+         <button
+            className={styles.primaryButton}
+            onClick={() => navigate(`/add-meal/${userId}`)}
+          >
+            Add a Meal
+          </button>
       </div>
     </div>
   );
