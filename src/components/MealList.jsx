@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../pages/AddMealPage.module.css";
+import styles from "../pages/pages.module.css";
 
 export default function MealList({ meals }) {
   const [expandedIndex, setExpandedIndex] = useState(null);

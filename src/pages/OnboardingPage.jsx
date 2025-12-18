@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createUserProfile } from "../services/userService";
-import styles from "./OnboardingPage.module.css";
+import styles from "./pages.module.css";
 
 export default function OnboardingPage() {
     const navigate = useNavigate();

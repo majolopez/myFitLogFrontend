@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { addMeal } from "../services/mealService";
-import styles from "../pages/AddMealPage.module.css";
+import styles from "../pages/pages.module.css";
 
 export default function MealForm({ userId, onAdd }) {
   const [name, setName] = useState("");

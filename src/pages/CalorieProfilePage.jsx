@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getCalorieProfile } from "../services/userService";
-import styles from "./CalorieProfilePage.module.css";
+import styles from "./pages.module.css";
 import { useNavigate } from "react-router-dom";
 
 
@@ -53,15 +53,14 @@ export default function CalorieProfilePage() {
         </div>
       </div>
 
-      <div className={styles.carb}>
+
          <button
-            className={styles.primaryButton}
+            className={styles.button}
             onClick={() => navigate(`/add-meal/${userId}`)}
           >
             Add a Meal
           </button>
       </div>
-    </div>
   );
 }
 

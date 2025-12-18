@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import MealForm from "../components/MealForm";
 import MealList from "../components/MealList";
 import { getMeals } from "../services/mealService";
-import styles from "./AddMealPage.module.css";
+import styles from "./pages.module.css";
 
 export default function AddMealPage() {
   const { userId } = useParams();
